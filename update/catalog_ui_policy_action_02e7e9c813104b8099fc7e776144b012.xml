@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Purchase Initiation Form (PIF)">41daed99137b7a4095d1b4a76144b064</catalog_item>
+        <catalog_variable>IO:3b69f5e513373e4099fc7e776144b0d5</catalog_variable>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-26 20:03:39</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>02e7e9c813104b8099fc7e776144b012</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>num_of_records</sys_name>
+        <sys_package display_value="Purchase Initiation Form" source="x_amsmi_pif">9ea36595137b7a4095d1b4a76144b0e2</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Purchase Initiation Form">9ea36595137b7a4095d1b4a76144b0e2</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_02e7e9c813104b8099fc7e776144b012</sys_update_name>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-26 20:03:39</sys_updated_on>
+        <table/>
+        <ui_policy display_value="(AM) PIF form - Show Confidential Questions is Data is Confidential">3c372d8813104b8099fc7e776144b05a</ui_policy>
+        <variable>num_of_records</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

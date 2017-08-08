@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="live_feed=false" audit="true" extends="task" label="Purchase Initiation Form" max_length="40" name="x_amsmi_pif_x_amsmi_pif" sizeclass="1" type="collection">
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Stage" max_length="80" name="u_pif_stage" read_only="true" type="workflow"/>
+    </element>
+</database>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions/>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {}]]></script_false>
+        <script_true><![CDATA[//Hide the additional data questions unless the classification is Highly confid or Confidential
+function onCondition() {	
+
+	if(g_form.getValue('data_class') != 'highly_confidential' && g_form.getValue('data_class') != 'confidential'){
+		g_form.setVisible('extra_data_start',false);
+		g_form.setVisible('supplier_data_time',false);
+		g_form.setVisible('num_of_records', false);
+	}
+}]]></script_true>
+        <set_values/>
+        <short_description>(AM) PIF Record - Show Confidential Questions is Data is Confidential</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-08-03 16:33:16</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>6b644a621314470095d1b4a76144b014</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_name>(AM) PIF Record - Show Confidential Questions is Data is Confidential</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Purchase Initiation Form" source="x_amsmi_pif">9ea36595137b7a4095d1b4a76144b0e2</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Purchase Initiation Form">9ea36595137b7a4095d1b4a76144b0e2</sys_scope>
+        <sys_update_name>sys_ui_policy_6b644a621314470095d1b4a76144b014</sys_update_name>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-08-04 14:50:10</sys_updated_on>
+        <table>x_amsmi_pif_x_amsmi_pif</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>

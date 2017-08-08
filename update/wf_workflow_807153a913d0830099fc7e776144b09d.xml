@@ -1,0 +1,1304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"subflows":[],"stages":{"4c7153a913d0830099fc7e776144b09d":{"stageId":"4c7153a913d0830099fc7e776144b09d","order":100,"duration":"","name":"Initiated","value":"Initiated"},"cc7153a913d0830099fc7e776144b09d":{"stageId":"cc7153a913d0830099fc7e776144b09d","order":100,"duration":"","name":"Submitted","value":"Submitted"}},"activities":{"35ad57211314830099fc7e776144b0e2":"cc7153a913d0830099fc7e776144b09d","37ec5b211314830099fc7e776144b0ec":"4c7153a913d0830099fc7e776144b09d"},"ends":["487153a913d0830099fc7e776144b09d"]}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type>run_match</condition_type>
+        <description/>
+        <expected_sequences>447153a913d0830099fc7e776144b09d,37ec5b211314830099fc7e776144b0ec,749cdb211314830099fc7e776144b045,35ad57211314830099fc7e776144b0e2,4e5d1b211314830099fc7e776144b0b2,613e5b211314830099fc7e776144b0a4|447153a913d0830099fc7e776144b09d,37ec5b211314830099fc7e776144b0ec,749cdb211314830099fc7e776144b045,35ad57211314830099fc7e776144b0e2,8dcd1f211314830099fc7e776144b07d,613e5b211314830099fc7e776144b0a4|613e5b211314830099fc7e776144b0a4,487153a913d0830099fc7e776144b09d</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>447153a913d0830099fc7e776144b09d,37ec5b211314830099fc7e776144b0ec,749cdb211314830099fc7e776144b045,35ad57211314830099fc7e776144b0e2,4e5d1b211314830099fc7e776144b0b2,613e5b211314830099fc7e776144b0a4,487153a913d0830099fc7e776144b09d|447153a913d0830099fc7e776144b09d,37ec5b211314830099fc7e776144b0ec,749cdb211314830099fc7e776144b045,35ad57211314830099fc7e776144b0e2,8dcd1f211314830099fc7e776144b07d,613e5b211314830099fc7e776144b0a4,487153a913d0830099fc7e776144b09d</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>Purchase Initiation Form (PIF)</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field>u_pif_stage</stage_field>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">447153a913d0830099fc7e776144b09d</start>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 19:35:28</sys_created_on>
+        <sys_id>44411b2d13d0830099fc7e776144b0f5</sys_id>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-08-08 14:49:43</sys_updated_on>
+        <table>x_amsmi_pif_x_amsmi_pif</table>
+        <timezone/>
+        <validated>false</validated>
+        <workflow display_value="Purchase Initiation Form (PIF)">807153a913d0830099fc7e776144b09d</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description/>
+        <name>Purchase Initiation Form (PIF)</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 19:35:28</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>807153a913d0830099fc7e776144b09d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Purchase Initiation Form (PIF)</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Purchase Initiation Form" source="x_amsmi_pif">9ea36595137b7a4095d1b4a76144b0e2</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Purchase Initiation Form">9ea36595137b7a4095d1b4a76144b0e2</sys_scope>
+        <sys_update_name>wf_workflow_807153a913d0830099fc7e776144b09d</sys_update_name>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 19:35:28</sys_updated_on>
+        <table>x_amsmi_pif_x_amsmi_pif</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Completed</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 19:35:28</sys_created_on>
+        <sys_id>407153a913d0830099fc7e776144b09e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 19:35:28</sys_updated_on>
+        <value>Completed</value>
+        <workflow_version display_value="Purchase Initiation Form (PIF)">44411b2d13d0830099fc7e776144b0f5</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Initiated</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 19:35:28</sys_created_on>
+        <sys_id>4c7153a913d0830099fc7e776144b09d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 19:35:28</sys_updated_on>
+        <value>Initiated</value>
+        <workflow_version display_value="Purchase Initiation Form (PIF)">44411b2d13d0830099fc7e776144b0f5</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Submitted</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 19:35:28</sys_created_on>
+        <sys_id>cc7153a913d0830099fc7e776144b09d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 19:35:28</sys_updated_on>
+        <value>Submitted</value>
+        <workflow_version display_value="Purchase Initiation Form (PIF)">44411b2d13d0830099fc7e776144b0f5</workflow_version>
+    </wf_stage>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Join">7c9a2ba9c0a801650021ada408de0ebd</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>8</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name/>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:31:21</sys_created_on>
+        <sys_id>613e5b211314830099fc7e776144b0a4</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-08-01 13:59:10</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Purchase Initiation Form (PIF)">44411b2d13d0830099fc7e776144b0f5</workflow_version>
+        <x>1143</x>
+        <y>90</y>
+    </wf_activity>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="">613e5b211314830099fc7e776144b0a4</activity>
+        <condition>activity.result == 'complete'</condition>
+        <condition_default display_value="Complete">6dd6ac3e0a6a803f16b5e594347ea01c</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Complete</name>
+        <order>1</order>
+        <short_description>All predecessor activities have transitioned to this activity</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:31:21</sys_created_on>
+        <sys_id>a23edb211314830099fc7e776144b04f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:31:21</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="">613e5b211314830099fc7e776144b0a4</activity>
+        <condition>activity.result == 'incomplete'</condition>
+        <condition_default display_value="Incomplete">6dd49ad30a6a803f03a5a18c4085b1c7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Incomplete</name>
+        <order>2</order>
+        <short_description>At least one predecessor activities did not transition to this activity</short_description>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:31:21</sys_created_on>
+        <sys_id>223edb211314830099fc7e776144b04f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:31:21</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 19:35:28</sys_created_on>
+        <sys_id>447153a913d0830099fc7e776144b09d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 19:35:28</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Purchase Initiation Form (PIF)">44411b2d13d0830099fc7e776144b0f5</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">447153a913d0830099fc7e776144b09d</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 19:35:28</sys_created_on>
+        <sys_id>c47153a913d0830099fc7e776144b09d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 19:35:28</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Branch">a246173ac0a8016400a47421cd41e42c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>6</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Create Proc and ITBS Tasks</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Submitted">cc7153a913d0830099fc7e776144b09d</stage>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:06</sys_created_on>
+        <sys_id>35ad57211314830099fc7e776144b0e2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-08-01 13:43:02</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Purchase Initiation Form (PIF)">44411b2d13d0830099fc7e776144b0f5</workflow_version>
+        <x>632</x>
+        <y>14</y>
+    </wf_activity>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Create Proc and ITBS Tasks">35ad57211314830099fc7e776144b0e2</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:06</sys_created_on>
+        <sys_id>35bd9f211314830099fc7e776144b0ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:06</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 19:35:28</sys_created_on>
+        <sys_id>487153a913d0830099fc7e776144b09d</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:58:30</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Purchase Initiation Form (PIF)">44411b2d13d0830099fc7e776144b0f5</workflow_version>
+        <x>391</x>
+        <y>561</y>
+    </wf_activity>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Create Task">9f4d1be5c0a8016400043d34ce066316</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>IT Business Services reviews PIF</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:28:36</sys_created_on>
+        <sys_id>4e5d1b211314830099fc7e776144b0b2</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-08-01 14:18:26</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Purchase Initiation Form (PIF)">44411b2d13d0830099fc7e776144b0f5</workflow_version>
+        <x>913</x>
+        <y>173</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e5d1b211314830099fc7e776144b0b2</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:28:37</sys_created_on>
+        <sys_id>ae9d5b211314830099fc7e776144b05c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:45:39</sys_updated_on>
+        <value>x_amsmi_pif_purchase_initiation_task</value>
+        <variable display_value="">c35ddb660a0a0ba96248a7095d22925c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e5d1b211314830099fc7e776144b0b2</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:28:37</sys_created_on>
+        <sys_id>2a9d5b211314830099fc7e776144b05c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:28:37</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e49040a0a0ba96248a709c2b3780b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e5d1b211314830099fc7e776144b0b2</document_key>
+        <order>40</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:28:36</sys_created_on>
+        <sys_id>a69d5b211314830099fc7e776144b05b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:28:36</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">c35e5fc70a0a0ba96248a7091af61d11</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e5d1b211314830099fc7e776144b0b2</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:28:37</sys_created_on>
+        <sys_id>229d5b211314830099fc7e776144b05e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:28:37</sys_updated_on>
+        <value/>
+        <variable display_value="">8ec1dbcec0a800662abc511f1daedc1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e5d1b211314830099fc7e776144b0b2</document_key>
+        <order>250</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:28:36</sys_created_on>
+        <sys_id>2e9d5b211314830099fc7e776144b05b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:28:36</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e03850a0a0ba96248a709503bd0c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e5d1b211314830099fc7e776144b0b2</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:28:37</sys_created_on>
+        <sys_id>ea9d5b211314830099fc7e776144b05c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:28:37</sys_updated_on>
+        <value/>
+        <variable display_value="">8ec61405c0a800661755b30be4ff8fcd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e5d1b211314830099fc7e776144b0b2</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:28:36</sys_created_on>
+        <sys_id>a29d5b211314830099fc7e776144b05c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:28:36</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">8ec7a5dbc0a80066187fa7acf3778705</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e5d1b211314830099fc7e776144b0b2</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:28:36</sys_created_on>
+        <sys_id>529d5b211314830099fc7e776144b05a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:28:36</sys_updated_on>
+        <value/>
+        <variable display_value="">8ecbeba5c0a8006672d676cd11dfa881</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e5d1b211314830099fc7e776144b0b2</document_key>
+        <order>610</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:28:37</sys_created_on>
+        <sys_id>6e9d5b211314830099fc7e776144b05d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:28:37</sys_updated_on>
+        <value/>
+        <variable display_value="">8ecf789cc0a8006652fc30aae937c5aa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e5d1b211314830099fc7e776144b0b2</document_key>
+        <order>620</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:28:37</sys_created_on>
+        <sys_id>629d5b211314830099fc7e776144b05d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:28:37</sys_updated_on>
+        <value/>
+        <variable display_value="">8eda2a35c0a800660f7aef7be752bf0b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e5d1b211314830099fc7e776144b0b2</document_key>
+        <order>700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:28:36</sys_created_on>
+        <sys_id>e29d5b211314830099fc7e776144b05b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:28:36</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed08869c0a800662aafc17e09975bb3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e5d1b211314830099fc7e776144b0b2</document_key>
+        <order>710</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:28:36</sys_created_on>
+        <sys_id>aa9d5b211314830099fc7e776144b05a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:28:36</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed4dbbec0a800664dbecf404d2c7ccd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e5d1b211314830099fc7e776144b0b2</document_key>
+        <order>720</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:28:37</sys_created_on>
+        <sys_id>e29d5b211314830099fc7e776144b05e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:28:37</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed32275c0a800665d67078e699a171f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e5d1b211314830099fc7e776144b0b2</document_key>
+        <order>1000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:28:37</sys_created_on>
+        <sys_id>269d5b211314830099fc7e776144b05d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:28:37</sys_updated_on>
+        <value>Fields</value>
+        <variable display_value="">c35dfee20a0a0ba96248a709f3a40869</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e5d1b211314830099fc7e776144b0b2</document_key>
+        <order>1100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:28:36</sys_created_on>
+        <sys_id>e69d5b211314830099fc7e776144b05a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:28:36</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e07ae0a0a0ba96248a7097c81317c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e5d1b211314830099fc7e776144b0b2</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:28:36</sys_created_on>
+        <sys_id>669d5b211314830099fc7e776144b05c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:28:36</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e0c980a0a0ba96248a70916cbc62e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e5d1b211314830099fc7e776144b0b2</document_key>
+        <order>1300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:28:36</sys_created_on>
+        <sys_id>229d5b211314830099fc7e776144b05b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:28:36</sys_updated_on>
+        <value>Review PIF</value>
+        <variable display_value="">c35e10720a0a0ba96248a709d48d0894</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e5d1b211314830099fc7e776144b0b2</document_key>
+        <order>1400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:28:37</sys_created_on>
+        <sys_id>aa9d5b211314830099fc7e776144b05d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:28:37</sys_updated_on>
+        <value>User has submitted a new PIF. Please review.</value>
+        <variable display_value="">c35e176c0a0a0ba96248a7090e235011</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e5d1b211314830099fc7e776144b0b2</document_key>
+        <order>1500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:28:36</sys_created_on>
+        <sys_id>6e9d5b211314830099fc7e776144b05a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:28:36</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e45aa0a0a0ba96248a709f3af7bac</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e5d1b211314830099fc7e776144b0b2</document_key>
+        <order>1600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:28:36</sys_created_on>
+        <sys_id>ee9d5b211314830099fc7e776144b05b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:28:36</sys_updated_on>
+        <value/>
+        <variable display_value="">c35dd7a80a0a0ba96248a709f45ae01b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e5d1b211314830099fc7e776144b0b2</document_key>
+        <order>1700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:28:36</sys_created_on>
+        <sys_id>269d5b211314830099fc7e776144b05a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:28:36</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">989c45c8c0a8006676efffafaa6d7442</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e5d1b211314830099fc7e776144b0b2</document_key>
+        <order>1710</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:28:37</sys_created_on>
+        <sys_id>e69d5b211314830099fc7e776144b05d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:28:37</sys_updated_on>
+        <value>// Set values for the task in this script.  Use the variable 'task' when setting additional values.&#13;
+// Note: This script is run after the task values are set using the Fields, Template or Values you have specified.&#13;
+//&#13;
+// For example:&#13;
+//     task.short_description = current.short_description;&#13;
+&#13;
+</value>
+        <variable display_value="">989cdb20c0a800661789b3de0f40214a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e5d1b211314830099fc7e776144b0b2</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:28:36</sys_created_on>
+        <sys_id>6a9d5b211314830099fc7e776144b05b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:28:36</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">8eca692cc0a80066783fefee57143a1a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="IT Business Services reviews PIF">4e5d1b211314830099fc7e776144b0b2</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:28:37</sys_created_on>
+        <sys_id>a69d5b211314830099fc7e776144b05e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:28:37</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>PIF Created</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Initiated">4c7153a913d0830099fc7e776144b09d</stage>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:26:30</sys_created_on>
+        <sys_id>37ec5b211314830099fc7e776144b0ec</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:26:41</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Purchase Initiation Form (PIF)">44411b2d13d0830099fc7e776144b0f5</workflow_version>
+        <x>169</x>
+        <y>14</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>37ec5b211314830099fc7e776144b0ec</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:26:30</sys_created_on>
+        <sys_id>af1d17211314830099fc7e776144b096</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:26:30</sys_updated_on>
+        <value>assignment_group=9857ecbb1344030095d1b4a76144b041^state=-10^short_description=PIF^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="PIF Created">37ec5b211314830099fc7e776144b0ec</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:26:30</sys_created_on>
+        <sys_id>631d17211314830099fc7e776144b097</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:26:30</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Create Task">9f4d1be5c0a8016400043d34ce066316</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>7</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Procurement reviews PIF</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:20</sys_created_on>
+        <sys_id>8dcd1f211314830099fc7e776144b07d</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-08-01 14:18:17</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Purchase Initiation Form (PIF)">44411b2d13d0830099fc7e776144b0f5</workflow_version>
+        <x>901</x>
+        <y>4</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8dcd1f211314830099fc7e776144b07d</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:20</sys_created_on>
+        <sys_id>4dcd1f211314830099fc7e776144b080</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:45:23</sys_updated_on>
+        <value>x_amsmi_pif_purchase_initiation_task</value>
+        <variable display_value="">c35ddb660a0a0ba96248a7095d22925c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8dcd1f211314830099fc7e776144b07d</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:20</sys_created_on>
+        <sys_id>c5cd1f211314830099fc7e776144b080</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:20</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e49040a0a0ba96248a709c2b3780b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8dcd1f211314830099fc7e776144b07d</document_key>
+        <order>40</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:20</sys_created_on>
+        <sys_id>45cd1f211314830099fc7e776144b07f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:20</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">c35e5fc70a0a0ba96248a7091af61d11</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8dcd1f211314830099fc7e776144b07d</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:20</sys_created_on>
+        <sys_id>cdcd1f211314830099fc7e776144b081</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:20</sys_updated_on>
+        <value/>
+        <variable display_value="">8ec1dbcec0a800662abc511f1daedc1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8dcd1f211314830099fc7e776144b07d</document_key>
+        <order>250</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:20</sys_created_on>
+        <sys_id>c9cd1f211314830099fc7e776144b07f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:20</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e03850a0a0ba96248a709503bd0c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8dcd1f211314830099fc7e776144b07d</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:20</sys_created_on>
+        <sys_id>89cd1f211314830099fc7e776144b080</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:20</sys_updated_on>
+        <value/>
+        <variable display_value="">8ec61405c0a800661755b30be4ff8fcd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8dcd1f211314830099fc7e776144b07d</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:20</sys_created_on>
+        <sys_id>41cd1f211314830099fc7e776144b080</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:20</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">8ec7a5dbc0a80066187fa7acf3778705</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8dcd1f211314830099fc7e776144b07d</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:20</sys_created_on>
+        <sys_id>01cd1f211314830099fc7e776144b07e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:20</sys_updated_on>
+        <value/>
+        <variable display_value="">8ecbeba5c0a8006672d676cd11dfa881</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8dcd1f211314830099fc7e776144b07d</document_key>
+        <order>610</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:20</sys_created_on>
+        <sys_id>0dcd1f211314830099fc7e776144b081</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:20</sys_updated_on>
+        <value/>
+        <variable display_value="">8ecf789cc0a8006652fc30aae937c5aa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8dcd1f211314830099fc7e776144b07d</document_key>
+        <order>620</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:20</sys_created_on>
+        <sys_id>01cd1f211314830099fc7e776144b081</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:20</sys_updated_on>
+        <value/>
+        <variable display_value="">8eda2a35c0a800660f7aef7be752bf0b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8dcd1f211314830099fc7e776144b07d</document_key>
+        <order>700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:20</sys_created_on>
+        <sys_id>81cd1f211314830099fc7e776144b07f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:20</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed08869c0a800662aafc17e09975bb3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8dcd1f211314830099fc7e776144b07d</document_key>
+        <order>710</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:20</sys_created_on>
+        <sys_id>49cd1f211314830099fc7e776144b07e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:20</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed4dbbec0a800664dbecf404d2c7ccd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8dcd1f211314830099fc7e776144b07d</document_key>
+        <order>720</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:20</sys_created_on>
+        <sys_id>81cd1f211314830099fc7e776144b082</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:20</sys_updated_on>
+        <value/>
+        <variable display_value="">8ed32275c0a800665d67078e699a171f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8dcd1f211314830099fc7e776144b07d</document_key>
+        <order>1000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:20</sys_created_on>
+        <sys_id>c1cd1f211314830099fc7e776144b081</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:20</sys_updated_on>
+        <value>Fields</value>
+        <variable display_value="">c35dfee20a0a0ba96248a709f3a40869</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8dcd1f211314830099fc7e776144b07d</document_key>
+        <order>1100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:20</sys_created_on>
+        <sys_id>85cd1f211314830099fc7e776144b07e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:20</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e07ae0a0a0ba96248a7097c81317c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8dcd1f211314830099fc7e776144b07d</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:20</sys_created_on>
+        <sys_id>05cd1f211314830099fc7e776144b080</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:20</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e0c980a0a0ba96248a70916cbc62e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8dcd1f211314830099fc7e776144b07d</document_key>
+        <order>1300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:20</sys_created_on>
+        <sys_id>cdcd1f211314830099fc7e776144b07e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:20</sys_updated_on>
+        <value>Review PIF</value>
+        <variable display_value="">c35e10720a0a0ba96248a709d48d0894</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8dcd1f211314830099fc7e776144b07d</document_key>
+        <order>1400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:20</sys_created_on>
+        <sys_id>49cd1f211314830099fc7e776144b081</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:20</sys_updated_on>
+        <value>User has submitted a new PIF. Please review.</value>
+        <variable display_value="">c35e176c0a0a0ba96248a7090e235011</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8dcd1f211314830099fc7e776144b07d</document_key>
+        <order>1500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:20</sys_created_on>
+        <sys_id>0dcd1f211314830099fc7e776144b07e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:20</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e45aa0a0a0ba96248a709f3af7bac</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8dcd1f211314830099fc7e776144b07d</document_key>
+        <order>1600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:20</sys_created_on>
+        <sys_id>8dcd1f211314830099fc7e776144b07f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:20</sys_updated_on>
+        <value/>
+        <variable display_value="">c35dd7a80a0a0ba96248a709f45ae01b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8dcd1f211314830099fc7e776144b07d</document_key>
+        <order>1700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:20</sys_created_on>
+        <sys_id>c1cd1f211314830099fc7e776144b07e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:20</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">989c45c8c0a8006676efffafaa6d7442</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8dcd1f211314830099fc7e776144b07d</document_key>
+        <order>1710</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:20</sys_created_on>
+        <sys_id>85cd1f211314830099fc7e776144b081</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:20</sys_updated_on>
+        <value>// Set values for the task in this script.  Use the variable 'task' when setting additional values.&#13;
+// Note: This script is run after the task values are set using the Fields, Template or Values you have specified.&#13;
+//&#13;
+// For example:&#13;
+//     task.short_description = current.short_description;&#13;
+&#13;
+</value>
+        <variable display_value="">989cdb20c0a800661789b3de0f40214a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8dcd1f211314830099fc7e776144b07d</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:20</sys_created_on>
+        <sys_id>09cd1f211314830099fc7e776144b07f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:20</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">8eca692cc0a80066783fefee57143a1a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Procurement reviews PIF">8dcd1f211314830099fc7e776144b07d</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:20</sys_created_on>
+        <sys_id>45cd1f211314830099fc7e776144b082</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:20</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Requester submits for processing</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:24:33</sys_created_on>
+        <sys_id>749cdb211314830099fc7e776144b045</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-08-01 14:17:53</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Purchase Initiation Form (PIF)">44411b2d13d0830099fc7e776144b0f5</workflow_version>
+        <x>398</x>
+        <y>13</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>749cdb211314830099fc7e776144b045</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:24:33</sys_created_on>
+        <sys_id>cfacdbed13d0830099fc7e776144b036</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:24:33</sys_updated_on>
+        <value>state=-11^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>749cdb211314830099fc7e776144b045</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:24:33</sys_created_on>
+        <sys_id>0facdbed13d0830099fc7e776144b036</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:24:33</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Requester submits for processing">749cdb211314830099fc7e776144b045</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:24:33</sys_created_on>
+        <sys_id>83acdbed13d0830099fc7e776144b037</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:24:33</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">35bd9f211314830099fc7e776144b0ca</condition>
+        <from display_value="Create Proc and ITBS Tasks">35ad57211314830099fc7e776144b0e2</from>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:36</sys_created_on>
+        <sys_id>0ddd5b211314830099fc7e776144b0f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:36</sys_updated_on>
+        <to display_value="IT Business Services reviews PIF">4e5d1b211314830099fc7e776144b0b2</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">45cd1f211314830099fc7e776144b082</condition>
+        <from display_value="Procurement reviews PIF">8dcd1f211314830099fc7e776144b07d</from>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:31:25</sys_created_on>
+        <sys_id>2b3e17211314830099fc7e776144b099</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:31:25</sys_updated_on>
+        <to display_value="">613e5b211314830099fc7e776144b0a4</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Complete">a23edb211314830099fc7e776144b04f</condition>
+        <from display_value="">613e5b211314830099fc7e776144b0a4</from>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:32:26</sys_created_on>
+        <sys_id>9a7e17611314830099fc7e776144b08c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:32:26</sys_updated_on>
+        <to display_value="End">487153a913d0830099fc7e776144b09d</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">35bd9f211314830099fc7e776144b0ca</condition>
+        <from display_value="Create Proc and ITBS Tasks">35ad57211314830099fc7e776144b0e2</from>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:29:38</sys_created_on>
+        <sys_id>9ddd1f211314830099fc7e776144b082</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:38</sys_updated_on>
+        <to display_value="Procurement reviews PIF">8dcd1f211314830099fc7e776144b07d</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">a69d5b211314830099fc7e776144b05e</condition>
+        <from display_value="IT Business Services reviews PIF">4e5d1b211314830099fc7e776144b0b2</from>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:31:27</sys_created_on>
+        <sys_id>c04e17611314830099fc7e776144b08c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:31:27</sys_updated_on>
+        <to display_value="">613e5b211314830099fc7e776144b0a4</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">631d17211314830099fc7e776144b097</condition>
+        <from display_value="PIF Created">37ec5b211314830099fc7e776144b0ec</from>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:26:36</sys_created_on>
+        <sys_id>c12d5b211314830099fc7e776144b0ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:26:36</sys_updated_on>
+        <to display_value="Requester submits for processing">749cdb211314830099fc7e776144b045</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">c47153a913d0830099fc7e776144b09d</condition>
+        <from display_value="Begin">447153a913d0830099fc7e776144b09d</from>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 19:35:28</sys_created_on>
+        <sys_id>c87153a913d0830099fc7e776144b09d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:26:34</sys_updated_on>
+        <to display_value="PIF Created">37ec5b211314830099fc7e776144b0ec</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">83acdbed13d0830099fc7e776144b037</condition>
+        <from display_value="Requester submits for processing">749cdb211314830099fc7e776144b045</from>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 20:24:44</sys_created_on>
+        <sys_id>f1bc5b211314830099fc7e776144b0a0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 20:29:10</sys_updated_on>
+        <to display_value="Create Proc and ITBS Tasks">35ad57211314830099fc7e776144b0e2</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-31 19:35:28</sys_created_on>
+        <sys_id>cc7153a913d0830099fc7e776144b09c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-31 19:35:28</sys_updated_on>
+        <workflow_version display_value="Purchase Initiation Form (PIF)">44411b2d13d0830099fc7e776144b0f5</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=807153a913d0830099fc7e776144b09d^sys_id!=44411b2d13d0830099fc7e776144b0f5">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

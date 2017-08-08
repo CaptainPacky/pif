@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="Purchase Initiation Form">9ea36595137b7a4095d1b4a76144b0e2</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-08-01 19:40:04</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>fc1c144a1390070095d1b4a76144b080</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Workflow</sys_name>
+        <sys_package display_value="Purchase Initiation Form" source="x_amsmi_pif">9ea36595137b7a4095d1b4a76144b0e2</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Purchase Initiation Form">9ea36595137b7a4095d1b4a76144b0e2</sys_scope>
+        <sys_update_name>sys_scope_privilege_fc1c144a1390070095d1b4a76144b080</sys_update_name>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-08-01 19:40:04</sys_updated_on>
+        <target_name>Workflow</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>sys_script_include</target_type>
+    </sys_scope_privilege>
+</record_update>

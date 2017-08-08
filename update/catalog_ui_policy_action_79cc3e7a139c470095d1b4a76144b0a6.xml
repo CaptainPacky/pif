@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Purchase Initiation Form (PIF)">41daed99137b7a4095d1b4a76144b064</catalog_item>
+        <catalog_variable>IO:86e4ecb71344030095d1b4a76144b0c6</catalog_variable>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-08-04 15:17:53</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>79cc3e7a139c470095d1b4a76144b0a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sections_required</sys_name>
+        <sys_package display_value="Purchase Initiation Form" source="x_amsmi_pif">9ea36595137b7a4095d1b4a76144b0e2</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Purchase Initiation Form">9ea36595137b7a4095d1b4a76144b0e2</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_79cc3e7a139c470095d1b4a76144b0a6</sys_update_name>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-08-04 15:17:53</sys_updated_on>
+        <table/>
+        <ui_policy display_value="(AM) PIF Form - Hide &quot;sections required&quot;">fdacfa7a139c470095d1b4a76144b099</ui_policy>
+        <variable>sections_required</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+</record_update>

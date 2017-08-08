@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <before>false</before>
+        <description>Script to remove the admin role from the write field on variables</description>
+        <flush_cache>false</flush_cache>
+        <name>(AM) Remove 'Admin' role from set of Var</name>
+        <run_once>true</run_once>
+        <script><![CDATA[removeRole();
+//addRoles();
+
+function addRoles(){
+	var gr = new GlideRecord('item_option_new');
+	gr.addEncodedQuery('variable_set.nameLIKEpif^variable_set=e361c58413d8030095d1b4a76144b074');
+	gr.setLimit(1);
+	gr.query();
+	gs.info("Found {0} variables.", gr.getRowCount());
+	while(gr.next()){
+		
+// 		gr.write_roles = 'PIF - Cyber and Tech Risk';
+// 		gr.update();
+// 		gr.write_roles = 'PIF - IT Biz Services';
+// 		gr.update();
+		gr.write_roles = 'PIF - Procurement';
+		gr.update();
+		gs.info("Added roles to {0}.", gr.name);
+	}
+}
+
+function removeRole(){
+	var gr = new GlideRecord('item_option_new');
+	gr.addEncodedQuery('cat_item=41daed99137b7a4095d1b4a76144b064');
+	//gr.setLimit(1);
+	gr.query();
+	gs.info("Found {0} of variables.", gr.getRowCount());
+	while(gr.next()){
+		//gs.info("Current role is {0}", gr.write_roles);
+		gr.setValue('write_roles','');
+		//gr.write_roles = ;
+		gr.update();
+		//gs.info("removed admin for {0}.", gr.name);
+	}
+}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-08-03 13:36:17</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>d71bd12e1390470095d1b4a76144b07f</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>(AM) Remove 'Admin' role from set of Var</sys_name>
+        <sys_package display_value="Purchase Initiation Form" source="x_amsmi_pif">9ea36595137b7a4095d1b4a76144b0e2</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Purchase Initiation Form">9ea36595137b7a4095d1b4a76144b0e2</sys_scope>
+        <sys_update_name>sys_script_fix_d71bd12e1390470095d1b4a76144b07f</sys_update_name>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-08-03 15:57:45</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

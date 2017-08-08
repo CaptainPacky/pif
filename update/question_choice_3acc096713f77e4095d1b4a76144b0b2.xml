@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <misc>0</misc>
+        <order>200</order>
+        <question display_value="What period of time will the Supplier store or have access to Confidential/Highly Confidential data?">4669f5e513373e4099fc7e776144b06b</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-12 18:33:47</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>3acc096713f77e4095d1b4a76144b0b2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>More than six months</sys_name>
+        <sys_package display_value="Purchase Initiation Form" source="x_amsmi_pif">9ea36595137b7a4095d1b4a76144b0e2</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Purchase Initiation Form">9ea36595137b7a4095d1b4a76144b0e2</sys_scope>
+        <sys_update_name>question_choice_3acc096713f77e4095d1b4a76144b0b2</sys_update_name>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-12 18:34:14</sys_updated_on>
+        <text>More than six months</text>
+        <value>more</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=3acc096713f77e4095d1b4a76144b0b2"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>3acc096713f77e4095d1b4a76144b0b2</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-12 18:33:47</sys_created_on>
+        <sys_id>0b1d81a713f77e4095d1b4a76144b039</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-12 18:33:47</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>3acc096713f77e4095d1b4a76144b0b2</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-12 18:33:47</sys_created_on>
+        <sys_id>871d81a713f77e4095d1b4a76144b039</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-12 18:33:47</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>

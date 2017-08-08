@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[function processCloneRequest() {
+	// Get messages
+	var msgCloneRequest = 'Clone Request';
+	var msgClose = 'Close';
+	var msgViewNewRequests = 'View New Request';
+	var msgEmptyUsers = 'Please specify user to clone request';
+	
+	// Get request ID and list of users, backout if no users have been specified
+	var ritmId = $('request').value;
+	var requestId = getReqId(ritmId);
+	var userId = g_user.userID;//$('request').value;
+	if (!userId) {
+		alert(msgEmptyUsers);
+		return;
+	}
+	function getReqId(ritm){
+		var screq = new GlideRecord('sc_req_item');
+		screq.get(ritm);
+		gs.log("getReqId: the sys and name= " + screq.request + screq.request.getUniqueValue());
+		return REQ.request.getUniqueValue();
+	}
+	var dd = new GlideModal("simple_progress_viewer", false, "40em", "10.5em");
+	
+	dd.setTitle(msgCloneRequest);
+	
+	// set ajax params
+	dd.setPreference("sysparm_ajax_processor_request_id", requestId);
+	dd.setPreference("sysparm_ajax_processor_user_ids", userId);
+	
+	// processor name
+	dd.setPreference("sysparm_ajax_processor", 'CatalogCloneRequestAjaxProcessor');
+	
+	// progress dialog title
+	dd.setPreference("sysparm_renderer_progress_title", msgCloneRequest);
+	
+	// adding buttons
+	dd.setPreference("sysparm_button_new_requests", msgViewNewRequests);
+	dd.setPreference("sysparm_button_close", msgClose);
+	
+	dd.on("executionComplete", function(trackerObj) {
+		//Configure buttons
+		var newRequestsBtn = $("sysparm_button_new_requests");
+		if (newRequestsBtn) {
+			var requestUrl = trackerObj.result.url_new_requests;
+			if (!requestUrl)
+				newRequestsBtn.hide();
+			else
+				newRequestsBtn.on('click', function() {
+				location.href = requestUrl;
+			});
+		}
+		var closeBtn = $("sysparm_button_close");
+		if (closeBtn) {
+			closeBtn.on('click', function() {
+				dd.destroy();
+			});
+		}
+	});
+	
+	dd.render();
+}]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_amsmi_pif_clone_request_picker.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	 <div class="row col-xs-12 sc_cv_info_row form-group form-horizontal">
+		<label class=" col-xs-12 col-md-3 col-lg-4 control-label" dir="ltr"><span>Pick a Request to Copy</span></label>
+		 <div class="col-xs-10 col-sm-9 col-md-6 col-lg-5 form-field input_controls">
+			 <g:ui_reference table="sc_req_item" query="cat_item=3a701b9b1332b20099fc7e776144b024" name="request" />
+		 </div>
+		 <div class="col-xs-2 col-md-1_5 col-lg-2 form-field-addons"></div>
+	</div>
+	<div class="pull-right">
+		<button class="btn btn-primary" href="#" onclick="processCloneRequest()">Copy Request</button>
+	</div>
+	<div style="clear:both"></div>
+</j:jelly>]]></html>
+        <name>clone_request_picker</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-06 18:07:15</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>bb7dcaad13373e4099fc7e776144b011</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>clone_request_picker</sys_name>
+        <sys_package display_value="Purchase Initiation Form" source="x_amsmi_pif">9ea36595137b7a4095d1b4a76144b0e2</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Purchase Initiation Form">9ea36595137b7a4095d1b4a76144b0e2</sys_scope>
+        <sys_update_name>sys_ui_page_bb7dcaad13373e4099fc7e776144b011</sys_update_name>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-06 18:07:15</sys_updated_on>
+    </sys_ui_page>
+</record_update>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>9857ecbb1344030095d1b4a76144b041</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_user_group">
+    <sys_user_group action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <average_daily_fte/>
+        <cost_center/>
+        <default_assignee/>
+        <description>Grants user access to PIF records and shows all data on PIF record</description>
+        <email/>
+        <exclude_manager>false</exclude_manager>
+        <hourly_rate>0</hourly_rate>
+        <include_members>false</include_members>
+        <manager/>
+        <name>PIF Administrators</name>
+        <parent/>
+        <points>0</points>
+        <roles/>
+        <source/>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-25 20:43:35</sys_created_on>
+        <sys_id>9857ecbb1344030095d1b4a76144b041</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-25 20:43:35</sys_updated_on>
+        <type>901d60596f212500ac2af13f5d3ee47c</type>
+        <u_adgroup/>
+        <u_alias/>
+        <u_it_group>false</u_it_group>
+        <vendors/>
+    </sys_user_group>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-25 20:46:07</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>c01860fb1344030095d1b4a76144b0f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PIF Administrators</sys_name>
+        <sys_package display_value="Purchase Initiation Form" source="x_amsmi_pif">9ea36595137b7a4095d1b4a76144b0e2</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Purchase Initiation Form">9ea36595137b7a4095d1b4a76144b0e2</sys_scope>
+        <sys_update_name>sys_metadata_link_c01860fb1344030095d1b4a76144b0f4</sys_update_name>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-25 20:46:07</sys_updated_on>
+        <tablename>sys_user_group</tablename>
+    </sys_metadata_link>
+</record_update>

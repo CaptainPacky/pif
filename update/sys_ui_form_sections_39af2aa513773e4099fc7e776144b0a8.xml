@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="39af2aa513773e4099fc7e776144b0a8" sys_domain="global" table="x_amsmi_pif_x_amsmi_pif" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>E124385</sys_created_by>
+            <sys_created_on>2017-07-06 20:36:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>f9af2aa513773e4099fc7e776144b0a8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_amsmi_pif_x_amsmi_pif" name="x_amsmi_pif_x_amsmi_pif" sys_domain="global" view="Default view">39af2aa513773e4099fc7e776144b0a8</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_amsmi_pif_x_amsmi_pif" sys_domain="global" view="Default view">f81b82ad13373e4099fc7e776144b0d7</sys_ui_section>
+            <sys_updated_by>E124385</sys_updated_by>
+            <sys_updated_on>2017-07-06 20:36:28</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>E124385</sys_created_by>
+            <sys_created_on>2017-07-06 20:36:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>b1af2aa513773e4099fc7e776144b0a9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_amsmi_pif_x_amsmi_pif" name="x_amsmi_pif_x_amsmi_pif" sys_domain="global" view="Default view">39af2aa513773e4099fc7e776144b0a8</sys_ui_form>
+            <sys_ui_section caption="PIF Form" display_value="PIF Form" name="x_amsmi_pif_x_amsmi_pif" sys_domain="global" view="Default view">bdaf2aa513773e4099fc7e776144b0a8</sys_ui_section>
+            <sys_updated_by>E124385</sys_updated_by>
+            <sys_updated_on>2017-07-06 20:36:28</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>E124385</sys_created_by>
+            <sys_created_on>2017-07-06 20:37:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>59dfaa6913773e4099fc7e776144b0ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_amsmi_pif_x_amsmi_pif" name="x_amsmi_pif_x_amsmi_pif" sys_domain="global" view="Default view">39af2aa513773e4099fc7e776144b0a8</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_amsmi_pif_x_amsmi_pif" sys_domain="global" view="Default view">55dfaa6913773e4099fc7e776144b0ce</sys_ui_section>
+            <sys_updated_by>E124385</sys_updated_by>
+            <sys_updated_on>2017-07-06 20:37:16</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>E124385</sys_created_by>
+            <sys_created_on>2017-08-01 19:26:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>fbf814c61390070095d1b4a76144b02e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_amsmi_pif_x_amsmi_pif" name="x_amsmi_pif_x_amsmi_pif" sys_domain="global" view="Default view">39af2aa513773e4099fc7e776144b0a8</sys_ui_form>
+            <sys_ui_section caption="Log" display_value="Log" name="x_amsmi_pif_x_amsmi_pif" sys_domain="global" view="Default view">f7f814c61390070095d1b4a76144b02e</sys_ui_section>
+            <sys_updated_by>E124385</sys_updated_by>
+            <sys_updated_on>2017-08-01 19:26:37</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_amsmi_pif_x_amsmi_pif</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>E124385</sys_created_by>
+            <sys_created_on>2017-07-06 20:36:28</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>39af2aa513773e4099fc7e776144b0a8</sys_id>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_name>x_amsmi_pif_x_amsmi_pif</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Purchase Initiation Form" source="x_amsmi_pif">9ea36595137b7a4095d1b4a76144b0e2</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Purchase Initiation Form">9ea36595137b7a4095d1b4a76144b0e2</sys_scope>
+            <sys_update_name>sys_ui_form_sections_39af2aa513773e4099fc7e776144b0a8</sys_update_name>
+            <sys_updated_by>E124385</sys_updated_by>
+            <sys_updated_on>2017-08-07 20:40:09</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

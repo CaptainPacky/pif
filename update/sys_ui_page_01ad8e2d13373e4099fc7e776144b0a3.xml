@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_amsmi_pif_Add_Attachment_UI_Record_Producer.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<button type="button" onclick="saveCatAttachment(gel('sysparm_item_guid').value, '$[item_table]')">Add Attachments</button>
+</j:jelly>]]></html>
+        <name>Add_Attachment_UI_Record_Producer</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-06 18:07:52</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>01ad8e2d13373e4099fc7e776144b0a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Add_Attachment_UI_Record_Producer</sys_name>
+        <sys_package display_value="Purchase Initiation Form" source="x_amsmi_pif">9ea36595137b7a4095d1b4a76144b0e2</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Purchase Initiation Form">9ea36595137b7a4095d1b4a76144b0e2</sys_scope>
+        <sys_update_name>sys_ui_page_01ad8e2d13373e4099fc7e776144b0a3</sys_update_name>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-06 18:07:52</sys_updated_on>
+    </sys_ui_page>
+</record_update>

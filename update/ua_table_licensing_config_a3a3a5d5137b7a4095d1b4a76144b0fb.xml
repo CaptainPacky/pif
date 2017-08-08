@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="ua_table_licensing_config">
+    <ua_table_licensing_config action="INSERT_OR_UPDATE">
+        <is_fulfillment>true</is_fulfillment>
+        <name>x_amsmi_pif_x_amsmi_pif</name>
+        <owner_condition table="x_amsmi_pif_x_amsmi_pif">opened_by=javascript:gs.getUserID()^EQ<item endquery="false" field="opened_by" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getUserID()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </owner_condition>
+        <sys_class_name>ua_table_licensing_config</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-05 20:26:03</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>a3a3a5d5137b7a4095d1b4a76144b0fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_amsmi_pif_x_amsmi_pif</sys_name>
+        <sys_package display_value="Purchase Initiation Form" source="x_amsmi_pif">9ea36595137b7a4095d1b4a76144b0e2</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Purchase Initiation Form">9ea36595137b7a4095d1b4a76144b0e2</sys_scope>
+        <sys_update_name>ua_table_licensing_config_a3a3a5d5137b7a4095d1b4a76144b0fb</sys_update_name>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-05 20:26:03</sys_updated_on>
+    </ua_table_licensing_config>
+</record_update>

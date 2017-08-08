@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Purchase Initiation Form (PIF)">41daed99137b7a4095d1b4a76144b064</sc_cat_item>
+        <sc_category display_value="Other">b4c57dee13f1ea0099fc7e776144b06c</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>E124385</sys_created_by>
+        <sys_created_on>2017-07-06 17:55:18</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>fcca82ad13373e4099fc7e776144b08a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Purchase Initiation Form" source="x_amsmi_pif">9ea36595137b7a4095d1b4a76144b0e2</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Purchase Initiation Form">9ea36595137b7a4095d1b4a76144b0e2</sys_scope>
+        <sys_update_name>sc_cat_item_category_fcca82ad13373e4099fc7e776144b08a</sys_update_name>
+        <sys_updated_by>E124385</sys_updated_by>
+        <sys_updated_on>2017-07-06 17:55:18</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

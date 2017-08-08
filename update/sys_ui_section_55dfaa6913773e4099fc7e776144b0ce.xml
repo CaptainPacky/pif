@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Notes" section_id="55dfaa6913773e4099fc7e776144b0ce" sys_domain="global" table="x_amsmi_pif_x_amsmi_pif" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comments</element>
+            <position>0</position>
+            <sys_created_by>E124385</sys_created_by>
+            <sys_created_on>2017-07-06 20:40:42</sys_created_on>
+            <sys_id>73907a2d13773e4099fc7e776144b051</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_amsmi_pif_x_amsmi_pif" sys_domain="global" view="Default view">55dfaa6913773e4099fc7e776144b0ce</sys_ui_section>
+            <sys_updated_by>E124385</sys_updated_by>
+            <sys_updated_on>2017-07-06 20:40:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comments_and_work_notes</element>
+            <position>1</position>
+            <sys_created_by>E124385</sys_created_by>
+            <sys_created_on>2017-07-06 20:40:42</sys_created_on>
+            <sys_id>f3907a2d13773e4099fc7e776144b051</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_amsmi_pif_x_amsmi_pif" sys_domain="global" view="Default view">55dfaa6913773e4099fc7e776144b0ce</sys_ui_section>
+            <sys_updated_by>E124385</sys_updated_by>
+            <sys_updated_on>2017-07-06 20:40:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Notes</caption>
+            <header>false</header>
+            <name>x_amsmi_pif_x_amsmi_pif</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>E124385</sys_created_by>
+            <sys_created_on>2017-07-06 20:37:16</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>55dfaa6913773e4099fc7e776144b0ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Notes</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Purchase Initiation Form" source="x_amsmi_pif">9ea36595137b7a4095d1b4a76144b0e2</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Purchase Initiation Form">9ea36595137b7a4095d1b4a76144b0e2</sys_scope>
+            <sys_update_name>sys_ui_section_55dfaa6913773e4099fc7e776144b0ce</sys_update_name>
+            <sys_updated_by>E124385</sys_updated_by>
+            <sys_updated_on>2017-07-06 20:37:16</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
